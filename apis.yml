@@ -1,8 +1,15 @@
 aid: ticketmonster
 name: Ticketmonster
-description: Ticketmonster is a company surfaced as a portfolio company of insight-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Ticketmonster (TMON) is a South Korean e-commerce and social-commerce platform
+  founded in 2010 as "Ticket Monster." Operating primarily at tmon.co.kr (the legacy
+  ticketmonster.co.kr brand), TMON sells deals, daily bargains, fashion, travel, and
+  a broad retail catalog to Korean consumers via web and mobile apps. It grew into one
+  of Korea's leading online marketplaces and was later brought under the Qoo10 group.
+  TMON is a consumer-facing retail/marketplace business; it does not publish a public
+  developer program, API portal, OpenAPI specification, SDKs, or documented API surface.
+  This profile was surfaced as a portfolio-linked company and enriched by the API
+  Evangelist pipeline, which confirmed the absence of any public API surface.
 url: https://raw.githubusercontent.com/api-evangelist/ticketmonster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +17,30 @@ x-backed-by:
 - insight-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- E-Commerce
+- Social Commerce
+- Retail
+- Marketplace
+- Shopping
+- Travel
+- South Korea
+image: https://www.tmon.co.kr/favicon.ico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ticketmonster-domain-security.yml
 - type: Website
+  url: https://www.tmon.co.kr/
+- type: LegacyWebsite
   url: http://www.ticketmonster.co.kr/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
